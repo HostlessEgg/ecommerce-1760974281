@@ -1,16 +1,63 @@
-# React + Vite
+# 🛍️ Ecommerce - La Tiendita  
+**Pre-entrega del Proyecto - React.js**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción del Proyecto
+Ecommerce desarrollado con React.js que cumple con todos los requerimientos de la pre-entrega. Implementa un carrito de compras funcional, integración con API externa, sistema de rutas y diseño responsive.
 
-Currently, two official plugins are available:
+## ✅ Requerimientos Cumplidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔹 **Requerimiento #1: Carrito de Compras Básico**
+- ✅ **Componente ProductList** - Lista productos disponibles
+- ✅ **useState** - Manejo del estado del carrito en CartContext
+- ✅ **Eventos de clic** - Botones "Agregar al carrito" funcionales
+- ✅ **Componente Cart** - Muestra productos seleccionados
+- ✅ **Layout completo** - Navbar, rutas y estructura de eCommerce
 
-## React Compiler
+### 🔹 **Requerimiento #2: Integración con API**
+- ✅ **API FakeStore** - Conexión a https://fakestoreapi.com/products
+- ✅ **Estado de carga** - Loading states con spinners
+- ✅ **Gestión de estado** - useState para productos y loading
+- ✅ **useEffect** - Fetch de datos al montar componentes
+- ✅ **Carrito ampliado** - Agregar, remover, calcular totales
+- ✅ **Diseño actualizado** - Tailwind CSS profesional
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔹 **Requerimiento #3: Sistema de Rutas**
+- ✅ **React Router DOM** - Navegación entre secciones
+- ✅ **Componentes por sección** - Home, Productos, Carrito, Detalle
+- ✅ **Navegación entre productos** - Rutas dinámicas /producto/:id
+- ✅ **Estado de carga** - Loading en ProductDetail
+- ✅ **Manejo de errores** - Página 404 implícita
 
-## Expanding the ESLint configuration
+### 🔹 **Requerimiento #4: Rutas Dinámicas y Protegidas**
+- ✅ **Rutas dinámicas** - /producto/:id con useParams
+- ✅ **Interactividad** - Botones, navegación, estados
+- ✅ **Rutas protegidas** - /admin con componente ProtectedRoute
+- ✅ **Navbar funcional** - Navegación entre todas las páginas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías Implementadas
+
+| Tecnología | Versión | Uso |
+|------------|---------|-----|
+| React | 19.1.1 | Framework principal |
+| React Router DOM | 7.9.4 | Navegación y rutas |
+| Tailwind CSS | 3.4.18 | Estilos y diseño |
+| Vite | 7.1.7 | Build tool y dev server |
+| FakeStore API | Externa | Datos de productos |
+
+## 📁 Estructura del Proyecto
+
+src/
+├── components/
+│ ├── Navbar.jsx # Navegación principal
+│ ├── ProductList.jsx # Lista de productos (Req #1)
+│ └── Cart.jsx # Carrito de compras (Req #1)
+├── pages/
+│ ├── Home.jsx # Página inicial
+│ ├── ProductDetail.jsx # Detalle producto (Req #3)
+│ └── ProtectedRoute.jsx # Ruta protegida (Req #4)
+├── context/
+│ └── CartContext.jsx # Estado global del carrito
+├── App.jsx # Configuración de rutas
+└── main.jsx # Punto de entrada
+
+
