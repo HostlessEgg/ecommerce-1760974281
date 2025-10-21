@@ -44,35 +44,5 @@ Ecommerce desarrollado con React.js que cumple con todos los requerimientos de l
 | Vite | 7.1.7 | Build tool y dev server |
 | FakeStore API | Externa | Datos de productos |
 
-## 📁 Estructura del Proyecto
-
-|-- README.md
-|-- eslint.config.js
-|-- index.html
-|-- package-lock.json
-|-- package.json
-|-- postcss.config.js
-|-- public
-|   `-- vite.svg
-|-- src
-|   |-- App.css
-|   |-- App.jsx
-|   |-- assets
-|   |   `-- react.svg
-|   |-- components
-|   |   |-- Cart.jsx
-|   |   |-- Debug.jsx
-|   |   |-- Navbar.jsx
-|   |   `-- ProductList.jsx
-|   |-- context
-|   |   `-- CartContext.jsx
-|   |-- index.css
-|   |-- main.jsx
-|   `-- pages
-|       |-- Home.jsx
-|       |-- ProductDetail.jsx
-|       `-- ProtectedRoute.jsx
-|-- tailwind.config.js
-`-- vite.config.js
 
 
