@@ -46,18 +46,33 @@ Ecommerce desarrollado con React.js que cumple con todos los requerimientos de l
 
 ## 📁 Estructura del Proyecto
 
-src/
-├── components/
-│ ├── Navbar.jsx # Navegación principal
-│ ├── ProductList.jsx # Lista de productos (Req #1)
-│ └── Cart.jsx # Carrito de compras (Req #1)
-├── pages/
-│ ├── Home.jsx # Página inicial
-│ ├── ProductDetail.jsx # Detalle producto (Req #3)
-│ └── ProtectedRoute.jsx # Ruta protegida (Req #4)
-├── context/
-│ └── CartContext.jsx # Estado global del carrito
-├── App.jsx # Configuración de rutas
-└── main.jsx # Punto de entrada
+|-- README.md
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- public
+|   `-- vite.svg
+|-- src
+|   |-- App.css
+|   |-- App.jsx
+|   |-- assets
+|   |   `-- react.svg
+|   |-- components
+|   |   |-- Cart.jsx
+|   |   |-- Debug.jsx
+|   |   |-- Navbar.jsx
+|   |   `-- ProductList.jsx
+|   |-- context
+|   |   `-- CartContext.jsx
+|   |-- index.css
+|   |-- main.jsx
+|   `-- pages
+|       |-- Home.jsx
+|       |-- ProductDetail.jsx
+|       `-- ProtectedRoute.jsx
+|-- tailwind.config.js
+`-- vite.config.js
 
 
